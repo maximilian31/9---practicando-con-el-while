@@ -1,0 +1,52 @@
+/*
+En una empresa trabajan n empleados cuyos sueldos oscilan entre $100 y $500, 
+realizar un programa que lea los sueldos que cobra cada empleado e informe cuántos empleados
+cobran entre $100 y $300 y cuántos cobran más de $300. Además el programa deberá informar el
+importe que gasta la empresa en sueldos al personal.
+*/
+
+#include "iostream"
+using namespace std;
+int main()
+{
+    float sueldos,total;
+    int menos300,mas300,empleados,sumaEmpleados;
+    
+    empleados = 0;
+    menos300 = 0;
+    mas300 = 0;
+    total = 0;
+    sumaEmpleados = 0; 
+    
+    cout << "Informar cuantos empleados tiene la empresa: " << endl;
+    cin >> empleados;
+    
+    while(sumaEmpleados <= empleados)
+    {
+        cout << "Informar el sueldo del empleado" << endl;
+        cin >> sueldos;
+          if(sueldos < 100 o sueldos <)
+          {
+             cout << "Sueldo incorrecto" << endl; 
+          }
+          if(sueldos >= 100 and sueldos < 300)
+          {
+             menos300 = menos300 +1;
+             total = total + sueldos;
+             sumaEmpleados = sumaEmpleados +1 ;
+          }
+          if(sueldos>=300)
+          {
+              mas300 = mas300 + 1;
+              sumaEmpleados = sumaEmpleados +1 ;
+              total = total + sueldos;
+          }
+    }
+    cout << "La cantidad de empleados que cobra menos de 300 es: " << menos300 << endl;
+    cout << "La cantidad de empleados que cobra mas o igual de 300 es: " << mas300 << endl;
+    cout << "El total que gasta la empresa en sueldos es: " << total << " patacones" << endl;
+}
+
+
+
+//NO ESTA TERMINADO
