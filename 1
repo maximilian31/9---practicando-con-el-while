@@ -1,0 +1,41 @@
+/*
+Escribir un programa que solicite ingresar 10 notas de alumnos y nos informe cuántos tienen notas mayores 
+o iguales a 7 y cuántos menores.
+*/
+
+#include "iostream"
+using namespace std;
+int main()
+{
+   float notas;
+   int mayores,menores,cantdeNotas;
+   
+   mayores=0;
+   menores=0;
+   cantdeNotas=1;
+   while(cantdeNotas<=10)
+   {
+       cout << "Ingrese la nota" << endl;
+       cin >> notas;
+       if(notas<1 or notas >10)
+       {
+           cout << "La nota es incorrecta" << endl;
+       } else {
+         cantdeNotas = cantdeNotas +1;
+         if(notas>=7)
+         {
+             mayores=mayores +1;
+         } else {
+             menores = menores +1;
+         }
+       }
+       
+       
+   }
+   cout << "La cantidad de alumnos con notas mayor o igual a 7 son: " << mayores << endl;
+   cout << "La cantidad de alumnos con notas menor a 7 son: " << menores << endl;
+    
+    
+    
+    
+}
