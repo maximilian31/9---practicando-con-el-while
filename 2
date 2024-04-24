@@ -21,11 +21,11 @@ int main()
     cout << "Informar cuantos empleados tiene la empresa: " << endl;
     cin >> empleados;
     
-    while(sumaEmpleados <= empleados)
+    while(sumaEmpleados < empleados)
     {
         cout << "Informar el sueldo del empleado" << endl;
         cin >> sueldos;
-          if(sueldos < 100 o sueldos <)
+          if((sueldos < 100) or (sueldos > 500))
           {
              cout << "Sueldo incorrecto" << endl; 
           }
@@ -35,7 +35,7 @@ int main()
              total = total + sueldos;
              sumaEmpleados = sumaEmpleados +1 ;
           }
-          if(sueldos>=300)
+          if(sueldos>=300 and sueldos<= 500)
           {
               mas300 = mas300 + 1;
               sumaEmpleados = sumaEmpleados +1 ;
@@ -46,7 +46,3 @@ int main()
     cout << "La cantidad de empleados que cobra mas o igual de 300 es: " << mas300 << endl;
     cout << "El total que gasta la empresa en sueldos es: " << total << " patacones" << endl;
 }
-
-
-
-//NO ESTA TERMINADO
