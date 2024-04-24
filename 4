@@ -1,0 +1,42 @@
+/*
+Realizar un programa que permita cargar dos listas de 15 valores cada una.
+Informar con un mensaje cual de las dos listas tiene un valor acumulado mayor 
+(mensajes "Lista 1 mayor", "Lista 2 mayor", "Listas iguales")
+Tener en cuenta que puede haber dos o más estructuras repetitivas en un algoritmo.
+*/
+
+#include "iostream"
+using namespace std;
+int main()
+{
+  int i,x,lista1,lista2, sumalista1, sumalista2;
+  i=1;
+  x=1;
+  sumalista1 = 0;
+  sumalista2 = 0;
+  while(i<=15)
+  {
+      cout << "Ingresar valores de la lista 1" << endl;
+      cin >> lista1;
+      sumalista1 = sumalista1 + lista1;
+      i=i +1;
+  }
+  while(x<=15)
+  {
+      cout << "Ingresar valores de la lista 2" << endl;
+      cin >> lista2;
+      sumalista2 = sumalista2 + lista2;
+      x=x +1;
+  }
+  cout << "CalculandooOOOooOooOoo bip bip bip" << endl;
+  if(sumalista1 > sumalista2)
+  {
+      cout << "Lista 1 es mayor" << endl;
+  }else if(sumalista1 < sumalista2)
+  {
+      cout << "Lista 2 es mayor" << endl;
+  } else {
+      cout << "Son iguales" << endl;
+  }
+}
+
