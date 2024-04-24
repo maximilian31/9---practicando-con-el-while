@@ -1,0 +1,39 @@
+/*
+Desarrollar un programa que permita cargar n números enteros y luego nos informe cuántos valores
+fueron pares y cuántos impares.
+Emplear el operador “%” en la condición de la estructura condicional 
+(este operador retorna el resto de la división de dos valores, por ejemplo 11%2 retorna un 1):
+	if (valor%2==0)         //Si el if da verdadero luego es par.
+*/
+
+#include "iostream"
+using namespace std;
+int main()
+{
+  int pares,impares,numeros, numerosTotal, cantidad;
+  numerosTotal = 0;
+  pares = 0;
+  impares = 0;
+  
+  cout << "Cuantos numeros enteros quiere cargar? " << endl;
+  cin >> cantidad;
+   do
+   {
+       cout << "Cargue los numeros: " << endl;
+       cin >> numeros;
+       numerosTotal = numerosTotal + 1;
+        if(numeros % 2 ==0)  // Esto es para saber si es par
+        {
+           pares = pares +1; 
+        }
+        else
+        {
+            impares = impares +1;
+        }
+   }
+   while(numerosTotal < cantidad);
+   cout << "Ingreso un total de: " << pares << " numeros pares" << endl;
+   cout << "\n";
+   cout << "Ingreso un total de: " << impares << " numeros impares" << endl;
+}
+
